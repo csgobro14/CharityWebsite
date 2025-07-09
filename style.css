@@ -6,9 +6,10 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  background: #f4f8fb;
 }
 
 /* Brand Colors */
@@ -28,6 +29,7 @@ body {
   color: white;
   text-align: center;
   padding: 0 20px;
+  margin: 16px auto;
 }
 
 .hero h1 {
@@ -56,13 +58,28 @@ body {
   justify-content: center;
 }
 
+.stories-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px; /* space between columns */
+  margin: 32px auto 16px auto;
+  max-width: 900px;
+  padding: 16px;
+}
+
+/* Each story box */
+.story-text, .impact-content {
+  flex: 1;
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+}
+
 .story img {
   width: 400px;
   border-radius: 10px;
-}
-
-.story-text {
-  max-width: 500px;
 }
 
 .story-text h2 {
@@ -91,8 +108,11 @@ body {
 }
 
 .impact-image {
-  width: 300px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto 12px auto;
+  border-radius: 8px;
 }
 
 /* CTA Section */
@@ -100,6 +120,7 @@ body {
   background-color: var(--yellow);
   text-align: center;
   padding: 50px 20px;
+  margin: 16px auto;
 }
 
 .call-to-action h2 {
@@ -113,19 +134,20 @@ body {
 }
 
 .donate-button {
-  background-color: var(--blue);
-  color: white;
-  padding: 12px 24px;
-  border: none;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 28px;
+  background: #1e90ff;
+  color: #fff;
   border-radius: 6px;
-  font-size: 1rem;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background 0.2s;
 }
 
 .donate-button:hover {
-  background-color: #003c8f;
-  transform: scale(1.05);
+  background: #156fc1;
 }
 
 /* Responsive Design */
