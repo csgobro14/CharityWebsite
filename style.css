@@ -18,6 +18,57 @@ body {
   --blue: #1565c0;
 }
 
+/* Header styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1565c0;
+  padding: 10px 30px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Yellow "Our Impact" button */
+.impact-button {
+  background: #fdd835;
+  color: #222;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s;
+  border: none;
+}
+
+.impact-button:hover {
+  background: #ffe066;
+}
+
+/* Light blue border line under header */
+.header-border {
+  height: 4px;
+  background: #90caf9;
+  width: 100%;
+  margin-bottom: 0;
+}
+
 /* Hero Section */
 .hero {
   background: url('img/Charity-Water_1.jpg') no-repeat center center/cover;
