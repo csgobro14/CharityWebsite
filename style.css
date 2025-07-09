@@ -24,17 +24,22 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #1565c0;
-  padding: 10px 30px;
+  padding: 12px 30px;
+  /* Adjust padding for equal spacing */
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  height: 56px; /* Set a fixed height for the header for vertical centering */
 }
 
 .logo {
   height: 40px;
-  margin-right: 12px;
+  width: auto;
+  /* Center the logo vertically and add equal left spacing */
+  display: block;
+  margin: auto 0 auto 0;
 }
 
 .header-title {
